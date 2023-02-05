@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    font-family: 'Poppins';
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+  section {
+      width: 0;
+      opacity: 0;
+      transition: all ease-in .1s;
+      display: flex;
+  } 
+
+  #first{
+    position: absolute;
+  }
+   
+  /* Styles applied on trigger */
+  section:target {
+      opacity: 1;
+      left: 0;
+      z-index: 10;
+  }
+  
+
+  @keyframes fadeIn {
+      100% { opacity:1 }
+  }
+
